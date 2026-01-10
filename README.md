@@ -3,8 +3,9 @@
 [![Terraform](https://img.shields.io/badge/Terraform-%3E%3D1.6-623CE4?logo=terraform)](https://www.terraform.io/)
 [![AWS](https://img.shields.io/badge/AWS-Cloud-FF9900?logo=amazon-aws)](https://aws.amazon.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Blog](https://img.shields.io/badge/Blog-dev.to-0A0A0A?logo=dev.to)](https://dev.to/amit_kumar_7db8e36a64dd45/aws-vpc-peering-using-terraform-a-complete-multi-region-hands-on-guide-ic9)
 
-## 📖 Overview
+## [>] Overview
 
 This project demonstrates **AWS VPC Peering** across three different AWS regions using Terraform. It creates a **full mesh topology** where all VPCs can communicate directly with each other using private IP addresses.
 
@@ -15,11 +16,11 @@ This project demonstrates **AWS VPC Peering** across three different AWS regions
 
 ### Key Features
 
-- 🌍 **Multi-Region**: 3 VPCs across 3 AWS regions (us-east-1, us-west-2, eu-west-2)
-- 🔗 **Full Mesh Peering**: All VPCs directly connected (3 peering connections)
-- 🚀 **Automated Deployment**: Complete Infrastructure as Code with Terraform
-- 🔒 **Secure**: Security groups configured for cross-VPC communication
-- 📊 **Production-Ready**: Proper tagging, dependencies, and validation
+- <> **Multi-Region**: 3 VPCs across 3 AWS regions (us-east-1, us-west-2, eu-west-2)
+- <> **Full Mesh Peering**: All VPCs directly connected (3 peering connections)
+- <> **Automated Deployment**: Complete Infrastructure as Code with Terraform
+- <> **Secure**: Security groups configured for cross-VPC communication
+- <> **Production-Ready**: Proper tagging, dependencies, and validation
 
 ### What Gets Created
 
@@ -37,7 +38,7 @@ This project demonstrates **AWS VPC Peering** across three different AWS regions
 
 ---
 
-## 🚀 Quick Start
+## >> Quick Start
 
 ### Prerequisites
 
@@ -83,27 +84,13 @@ This project demonstrates **AWS VPC Peering** across three different AWS regions
 
 ---
 
-## 📚 Documentation
+## [] Documentation
 
+- **[Blog Post](https://dev.to/amit_kumar_7db8e36a64dd45/aws-vpc-peering-using-terraform-a-complete-multi-region-hands-on-guide-ic9)** - Complete hands-on guide on dev.to
 - **[Demo.md](Demo.md)** - Complete implementation guide with detailed explanations
 - **[Terraform Files](terraform/)** - Infrastructure as Code
 
 ---
-
-## 🏗️ Architecture Details
-
-### Network Design
-
-```
-Primary VPC (us-east-1)          Tertiary VPC (eu-west-2)          Secondary VPC (us-west-2)
-10.0.0.0/16                      10.2.0.0/16                       10.1.0.0/16
-     │                                 │                                 │
-     ├─ Subnet: 10.0.1.0/24           ├─ Subnet: 10.2.1.0/24           ├─ Subnet: 10.1.1.0/24
-     ├─ Internet Gateway              ├─ Internet Gateway              ├─ Internet Gateway
-     ├─ EC2 Instance                  ├─ EC2 Instance                  ├─ EC2 Instance
-     │                                 │                                 │
-     └────────────VPC Peering──────────┴────────────VPC Peering─────────┘
-```
 
 ### VPC Peering Connections (Full Mesh)
 
@@ -113,7 +100,7 @@ Primary VPC (us-east-1)          Tertiary VPC (eu-west-2)          Secondary VPC
 
 ---
 
-## 💡 Key Concepts
+## [*] Key Concepts
 
 - **VPC Peering**: Network connection between two VPCs for private communication
 - **Full Mesh Topology**: All VPCs directly connected (vs hub-and-spoke)
@@ -122,7 +109,7 @@ Primary VPC (us-east-1)          Tertiary VPC (eu-west-2)          Secondary VPC
 
 ---
 
-## ⚠️ Important Notes
+## [!] Important Notes
 
 ### Costs
 This project creates billable AWS resources:
@@ -144,7 +131,7 @@ terraform destroy
 
 ---
 
-## 🛠️ Project Structure
+## [+] Project Structure
 
 ```
 .
@@ -164,7 +151,7 @@ terraform destroy
 
 ---
 
-## 📖 Learning Outcomes
+## [>] Learning Outcomes
 
 After completing this project, you'll understand:
 
@@ -177,18 +164,19 @@ After completing this project, you'll understand:
 
 ---
 
-## 🔗 Resources
+## <> Resources
 
+- [Blog Post - Complete Hands-On Guide](https://dev.to/amit_kumar_7db8e36a64dd45/aws-vpc-peering-using-terraform-a-complete-multi-region-hands-on-guide-ic9)
 - [AWS VPC Peering Documentation](https://docs.aws.amazon.com/vpc/latest/peering/)
 - [Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 - [Complete Implementation Guide](Demo.md)
 
 ---
 
-## 📝 License
+## [-] License
 
 This project is licensed under the MIT License.
 
 ---
 
-**Made with ❤️ using Terraform and AWS**
+**Made with <3 using Terraform and AWS**
